@@ -10,10 +10,21 @@
 <body>
     <nav class="content  w-screen h-14 border-solid border-2 border-black">
         <ul class="content flex items-center w-4/5 h-full mx-auto uppercase font-bold">
-            <li class="mx-4">Inicio</li>
-            <li class="mx-6">Nuevo Cliente</li>
+            <a href="./index.html"><li class="mx-4">Inicio</li></a>
+            <a href="./nuevo_cliente.html"><li class="mx-6">Nuevo Cliente</li></a>
         </ul>
     </nav>
-   
+    <section class="w-4/5 h-screen mx-auto flex flex-col">
+        <h1 class="mx-auto  my-8 uppercase font-bold">Nuevo Cliente</h1>
+        <form class="mx-auto w-4/5 place-content-center border-solid border-2 border-black grid grid-cols-2 px-10 py-5 gap-2">
+            <label for="numero " class="font-bold">Numero Documento:</label>
+            <input type="text" name="numero" class="border-solid border-2 border-black rounded-md">
+            <label for="nombres" class="font-bold">Nombres:</label>
+            <input type="text" name="nombres" class="border-solid border-2 border-black rounded-md">
+            <label for="apellidos" class="font-bold">Apellidos:</label>
+            <input type="text" name="apelldos" class="border-solid border-2 border-black rounded-md">
+            <input type="submit" value="Guardar" class="mx-auto mt-2 bg-green-200 w-1/4 col-span-2 uppercase font-semibold rounded-md border-solid border-2 border-green-600">
+        </form>
+    </section>
 </body>
 </html>
